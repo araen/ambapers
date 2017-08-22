@@ -1,0 +1,1 @@
+<div class="error msg">Maaf anda tidak diperbolehkan mengakses halaman ini</div>

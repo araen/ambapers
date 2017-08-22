@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<layout>
+    <login>
+        <directory>login/</directory>
+        <main>layout</main>
+        <items>
+            <item>header</header>
+            <item>notification</header>
+            <item>content</header>
+            <item>footer</header>
+        </items>
+    </login>
+    <list>
+        <directory>main/</directory>
+        <main>layout</main>
+        <items>
+            <item>header</header>
+            <item>menu</header>
+            <item>notification</header>
+            <item>pageheader</header>
+            <item>filter</header>
+            <item>button</header>
+            <item>content</header>
+            <item>pagination</header>
+            <item>footer</header>
+        </items>
+    </list>
+    <data>
+        <directory>data/</directory>
+        <main>layout</main>
+        <items>
+            <item>header</header>
+            <item>content</header>
+            <item>footer</header>
+        </items>
+    </data>
+    <report>
+        <directory>report/</directory>
+        <main>layout</main>
+        <items>
+            <item>header</header>
+            <item>content</header>
+            <item>footer</header>
+        </items>
+    </report>
+</layout>
