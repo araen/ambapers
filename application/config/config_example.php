@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | environments.
 |
 */
-$config['app_name']     = 'rmb/'; #fill empty if null 
+$config['app_name']     = 'ambapers/'; #fill empty if null 
 $config['base_url']     = 'http://' . $_SERVER['HTTP_HOST'] . '/' . $config['app_name'];
 $config['base_app']     = $config['base_url'] . 'application/';
 $config['base_module']  = $config['base_url'] . 'application/modules/';
