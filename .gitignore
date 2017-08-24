@@ -12,4 +12,9 @@ application/logs/*
 !application/logs/index.html
 !application/logs/.htaccess
 
-grab/cache/*
+grab/cache/bi.html
+grab/cache/mandiri.html
+grab/cache/pajak.html
+grab/cache/result_bi.json
+grab/cache/result_mandiri.json
+grab/cache/result_pajak.json
