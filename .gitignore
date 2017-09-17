@@ -18,3 +18,6 @@ grab/cache/pajak.html
 grab/cache/result_bi.json
 grab/cache/result_mandiri.json
 grab/cache/result_pajak.json
+
+.htaccess
+index.php
