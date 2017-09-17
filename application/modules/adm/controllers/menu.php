@@ -8,7 +8,7 @@ class Menu extends BASE_Controller {
     #dependency model
     protected $model        = "model_menutype";
     
-    protected $pagetitle    = "Pengguna";
+    protected $pagetitle    = "Menu";
 
 	public function __construct() 
 	{
@@ -28,7 +28,7 @@ class Menu extends BASE_Controller {
         parent::lst($page);
 	}
 
-	public function detail($value = 0)
+	public function listdetail($value = 0)
 	{
 		$this->loadModel('model_menu');
 
@@ -41,10 +41,14 @@ class Menu extends BASE_Controller {
 		$this->data['a_kolom'][] = array('kolom' => 'ordered', 'label' => 'ORDER');
 		$this->data['a_kolom'][] = array('kolom' => 'publiced', 'label' => 'PUBLISH', 'type' => 'S', 'option' => array('yes' => 'Ya', 'no' => 'Tidak'));
 
+		$this->data['l_kolom'][] = array('kolom' => 'name', 'label' => 'NAMA MENU');
+		$this->data['l_kolom'][] = array('kolom' => 'order', 'label' => 'ORDER');
+		$this->data['l_kolom'][] = array('kolom' => 'type', 'label' => 'TIPE');
+		$this->data['l_kolom'][] = array('kolom' => 'link', 'label' => 'LINK');
+		$this->data['l_kolom'][] = array('kolom' => 'publiced', 'label' => 'PUBLISH', 'type' => 'S', 'option' => array('yes' => 'Ya', 'no' => 'Tidak'));
+
 		$menutype = $this->model->getData($value);
 		$this->data['a_data'] = $this->menu->getMenu($menutype['menutype']);
-
-		debug($this->data['a_data']);
 
 		$this->initView('data_menu');
         $this->build();

@@ -36,7 +36,7 @@
                                             </td>
                                         <?php } else{?>
                                             <td align="center">
-                                                <a href="<?= base_url($pageurl .'/detail/'. $p_key)?>">
+                                                <a href="<?= base_url($pageurl .'/listdetail/'. $p_key)?>">
                                                     <span class="btn btn-xs btn-warning" title="Detail">
                                                         <i class="glyphicon glyphicon-edit"></i>
                                                     </span>

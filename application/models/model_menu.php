@@ -16,8 +16,6 @@ class Model_menu extends BASE_Model
         $this->addFilter('menutype', $idtype);
         $menus = $this->getList();
 
-        debug($menus);
-
         $a_data = array();
         $a_tree = array();
         $key = $parent = null;
