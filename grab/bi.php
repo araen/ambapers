@@ -1,4 +1,5 @@
 <?php
+    error_reporting(0);
     header('Content-type: application/json');
 
     require_once('simple_html_dom.php');
